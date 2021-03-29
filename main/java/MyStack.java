@@ -1,23 +1,31 @@
 
 public class MyStack {
 	
-		 private final MyLinkedList myLinkedList;
+	
 
-		    public MyStack(){
-		        this.myLinkedList = new MyLinkedList();
-		    }
+	    private final MyLinkedList myLinkedList;
 
-		    public void push(INode myNode) {
-		        myLinkedList.add(myNode);
-		    }
+	    public MyStack(){
+	        this.myLinkedList = new MyLinkedList();
+	    }
 
-		    public void printStack(){
-		        myLinkedList.show();
-		    }
+	    public void push(INode myNode) {
+	        myLinkedList.add(myNode);
+	    }
 
-		    public INode peak(){
-		        return myLinkedList.head;
-		    }
+	    public void show(){
+	        myLinkedList.show();
+	    }
+
+	    public INode peak(){
+	        return myLinkedList.head;
+	    }
+
+	    public INode pop() {
+	    return myLinkedList.pop();
+	    }
+
+		
 	
 
 	//public void push(MyNode<Integer> myFirstNode) {
